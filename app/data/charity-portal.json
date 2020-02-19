@@ -1,0 +1,25 @@
+{
+  "siteName": "charity-portal",
+  "root": "/prototype/giving/charity-portal/",
+  "pages": [
+    {
+      "title": "Reporting (beta)",
+      "url": "/prototype/giving/charity-portal/reporting/",
+      "top_nav": "true"
+    }
+  ],
+  "supporting_pages": [
+    {
+      "title": "Help",
+      "url": "/prototype/giving/charity-portal/help/"
+    }
+  ],
+  "buttons": [
+    {
+      "title": "Sign out",
+      "url": "/prototype/giving/",
+      "icon_class": "stroke",
+      "icon": "general.svg#my-account"
+    }
+  ]
+}

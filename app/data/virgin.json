@@ -1,0 +1,574 @@
+{
+  "root": "/prototype/virgin",
+  "siteName": "virgin",
+  "scripts_file": "_includes/scripts.html",
+  "css_file": "/public/stylesheets/vmstrap.css",
+  "nav_file": "_components/navbar.html",
+  "footer_file": "_components/footer.html",
+  "system_nav": false,
+  "pages": [
+    {
+      "title": "Our products",
+      "url": "#product-pages",
+      "top_nav": "true",
+      "categories": [
+        {
+          "title": "Current accounts",
+          "url": "#current-accounts-pages",
+          "subnav": {
+            "landing_page": {
+              "title": "Current accounts home",
+              "url": "/current-account"
+            },
+            "pages": [
+              {
+                "title": "The Virgin Money Current Account",
+                "url": "/current-account/essential-current-account.jsp"
+              },
+              {
+                "title": "Existing customers",
+                "url": "/service/sign-in/?product:current-account&dd:0"
+              },
+              {
+                "title": "Questions and answers",
+                "url": "/current-account/questions-and-answers/"
+              }
+            ],
+            "cards": [
+              {
+                "url": "/app",
+                "title": "Our app makes money easy",
+                "teaser": "Packed full of clever tools to help you track, budget, save and pay."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Savings",
+          "url": "#savings-pages",
+          "subnav": {
+            "landing_page": {
+              "title": "Savings home",
+              "url": "/savings"
+            },
+            "cards": [
+              {
+                "url": "",
+                "title": "Savers. Get miles more for your money.",
+                "teaser": "Earn Flying Club miles, rather than interest."
+              },
+              {
+                "url": "",
+                "title": "Five ways to get the most out of your ISA allowance",
+                "teaser": "Felicity Hannah | 5 min read"
+              }
+            ],
+            "featured": [
+              {
+                "title": "Find a savings account",
+                "url": "/prototype/virgin/savings/find/results"
+              }
+            ],
+            "pages": [
+              {
+                "title": "ISAs",
+                "url": "/prototype/virgin/isa"
+              },
+              {
+                "title": "Access accounts",
+                "url": "/prototype/virgin/savings/learn/access"
+              },
+              {
+                "title": "Fixed term accounts",
+                "url": "/prototype/virgin/savings/learn/fixed-term"
+              },
+              {
+                "title": "Virgin Atlantic Savings Account",
+                "url": "/prototype/virgin/savings/products/virgin_atlantic_1_year_flying_club_savings_account_issue_12"
+              },
+              {
+                "title": "Existing savings customers",
+                "url": "/prototype/virgin/savings/helpful-information"
+              },
+              {
+                "title": "Questions and answers",
+                "url": "/prototype/virgin/savings/questions-and-answers"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Credit cards",
+          "url": "#cards-pages",
+          "subnav": {
+            "type": "expanded",
+            "landing_page": {
+              "title": "Credit Cards home",
+              "url": "/credit-cards"
+            },
+            "featured":[
+              {
+                "url": "/check",
+                "title": "Check your eligibility"
+              },
+              {
+                "url": "/check",
+                "title": "Questions and answers"
+              }
+            ],
+            "pages": [
+              {
+                "title": "Balance transfer credit cards",
+                "url": "/current-account/essential-current-account.jsp"
+              },
+              {
+                "title": "Money transfer credit cards",
+                "url": "/service/sign-in/?product:current-account&dd:0"
+              },
+              {
+                "title": "All round and purchase credit cards",
+                "url": "/current-account/questions-and-answers/"
+              },
+              {
+                "title": "Virgin Atlantic credit cards",
+                "url": "/current-account/questions-and-answers/"
+              },
+              {
+                "title": "Virgin Money prepaid cards",
+                "url": "/current-account/questions-and-answers/"
+              },
+              {
+                "title": "Travel credit cards",
+                "url": "/current-account/questions-and-answers/"
+              }
+            ],
+            "cards": [
+              {
+                "url": "/card",
+                "title": "How to be good with money",
+                "teaser": "Iona Bain | 4 min read"
+              },
+              {
+                "url": "/card",
+                "title": "Our Credit Card App",
+                "teaser": "Manage your card. Master your spending."
+              },
+              {
+                "url": "/card",
+                "title": "Our card - now with Apply Pay",
+                "teaser": "The easy, safe and fast way to pay."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Loans",
+          "url": "#loans-pages",
+          "subnav": {
+            "type": "expanded",
+            "landing_page": {
+              "title": "Loans home",
+              "url": "/loans"
+            },
+            "featured":[
+              {
+                "url": "/check",
+                "title": "Check your eligibility"
+              },
+              {
+                "url": "/check",
+                "title": "Questions and answers"
+              }
+            ],
+            "pages": [
+              {
+                "title": "Balance transfer credit cards",
+                "url": "/current-account/essential-current-account.jsp"
+              },
+              {
+                "title": "Money transfer credit cards",
+                "url": "/service/sign-in/?product:current-account&dd:0"
+              },
+              {
+                "title": "All round and purchase credit cards",
+                "url": "/current-account/questions-and-answers/"
+              },
+              {
+                "title": "Virgin Atlantic credit cards",
+                "url": "/current-account/questions-and-answers/"
+              },
+              {
+                "title": "Virgin Money prepaid cards",
+                "url": "/current-account/questions-and-answers/"
+              },
+              {
+                "title": "Travel credit cards",
+                "url": "/current-account/questions-and-answers/"
+              }
+            ],
+            "cards": [
+              {
+                "url": "/card",
+                "title": "How to be good with money",
+                "teaser": "Iona Bain | 4 min read"
+              },
+              {
+                "url": "/card",
+                "title": "Our Credit Card App",
+                "teaser": "Manage your card. Master your spending."
+              },
+              {
+                "url": "/card",
+                "title": "Our card - now with Apply Pay",
+                "teaser": "The easy, safe and fast way to pay."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Mortages",
+          "url": "#mortgages-pages",
+          "subnav": {
+            "landing_page": {
+              "title": "Mortages home",
+              "url": "/mortages"
+            },
+            "featured": [
+              {
+                "title": "Find a mortgage",
+                "url": "/current-account/essential-current-account.jsp"
+              },
+              {
+                "title": "Check your eligibility",
+                "url": "/service/sign-in/?product:current-account&dd:0"
+              }
+            ],
+            "pages": [
+              {
+                "title": "First time buyer",
+                "url": "/current-account/essential-current-account.jsp"
+              },
+              {
+                "title": "Buy to let",
+                "url": "/service/sign-in/?product:current-account&dd:0"
+              },
+              {
+                "title": "Remortgaging",
+                "url": "/current-account/questions-and-answers/"
+              },
+              {
+                "title": "Moving home",
+                "url": "/current-account/questions-and-answers/"
+              },
+              {
+                "title": "Existing customer",
+                "url": "/current-account/questions-and-answers/"
+              },
+              {
+                "title": "Questions and answers",
+                "url": "/current-account/questions-and-answers/"
+              }
+            ],
+            "cards": [
+              {
+                "title": "Portfolio buy-to-let mortgages",
+                "teaser": "We're now accepting mortgage applications from portfolio landlords",
+                "url": "/card"
+              },
+              {
+                "title": "The basics of buying a house",
+                "teaser": "Felicity Hannah | 3 min read",
+                "url": "/card"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Insurance",
+          "url": "#insurances-pages",
+          "subnav": {
+            "landing_page": {
+              "title": "Insurance home",
+              "url": "/insurance"
+            },
+            "pages": [
+              {
+                "title": "Life insurance",
+                "url": "/current-account/essential-current-account.jsp"
+              },
+              {
+                "title": "Travel insurance",
+                "url": "/service/sign-in/?product:current-account&dd:0"
+              }
+            ],
+            "cards": [
+              {
+                "url": "/card",
+                "title": "Six types of basic protection every family should consider",
+                "teaser": "Iona Bain | 3 min read"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Investments",
+          "url": "#investments-pages",
+          "subnav": {
+            "type": "expanded",
+            "landing_page": {
+              "title": "Investments home",
+              "url": "/investments"
+            },
+            "pages": [
+              {
+                "title": "Stocks and Shares ISAs",
+                "url": "/current-account/essential-current-account.jsp"
+              },
+              {
+                "title": "Unit trusts",
+                "url": "/service/sign-in/?product:current-account&dd:0"
+              },
+              {
+                "title": "Financial planning",
+                "url": "/current-account/questions-and-answers/"
+              },
+              {
+                "title": "Questions and answers",
+                "url": "/current-account/questions-and-answers/"
+              },
+              {
+                "title": "Transfer an existing ISA",
+                "url": "/current-account/questions-and-answers/"
+              }
+            ],
+            "cards": [
+              {
+                "url": "/card",
+                "title": "Virgin Money Stocks and Shares iSA",
+                "teaser": "We belive you don't need to be an expert to invest in the stock market."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Pensions",
+          "url": "#pensions-pages",
+          "icon": "core.svg#pensions",
+          "subnav": {
+            "type": "expanded",
+            "landing_page": {
+              "title": "Pensions home",
+              "url": "/pensions"
+            },
+            "pages": [
+              {
+                "title": "Personal pensions",
+                "url": "/current-account/essential-current-account.jsp"
+              },
+              {
+                "title": "Children's pensions",
+                "url": "/service/sign-in/?product:current-account&dd:0"
+              },
+              {
+                "title": "Workplace pensions",
+                "url": "/current-account/questions-and-answers/"
+              },
+              {
+                "title": "Pensions and retirement",
+                "url": "/current-account/questions-and-answers/"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Currency",
+          "url": "#currency-pages",
+          "icon": "core.svg#currency",
+          "subnav": {
+            "type": "expanded",
+            "landing_page": {
+              "title": "Currency home",
+              "url": "/currency"
+            },
+            "pages": [
+              {
+                "title": "Virgin Money travel money",
+                "url": "/current-account/essential-current-account.jsp"
+              },
+              {
+                "title": "International money transfer",
+                "url": "/service/sign-in/?product:current-account&dd:0"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "For business",
+      "url": "#business-pages",
+      "subnav": {
+        "landing_page": {
+          "title": "Business home",
+          "url": "/prototype/virgin/business",
+          "intro": "With our range of business savings accounts, we're working hard to help UK businesses grow and thrive. And this is just the beginning of our journey."
+        },
+        "cards": [
+          {
+            "url": "",
+            "title": "Business owners shouldn't have to sacrifice their personal life",
+            "teaser": "Jim Cregan | 5 min read"
+          },
+          {
+            "url": "",
+            "title": "Four habits of successful entrepreneurs",
+            "teaser": "Sam Fentiman-Hall | 5 min read"
+          }
+        ],
+        "pages": [
+          {
+            "title": "Business Access Savings Account",
+            "url": "/current-account/essential-current-account.jsp"
+          },
+          {
+            "title": "1 Year Business Fixed Rate Savings",
+            "url": "/service/sign-in/?product:current-account&dd:0"
+          },
+          {
+            "title": "2 Year Business Fixed Rate Savings",
+            "url": "/current-account/questions-and-answers/"
+          },
+          {
+            "title": "Questions and answers",
+            "url": "/current-account/questions-and-answers/"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Your life",
+      "url": "#life-pages",
+      "subnav": {
+        "landing_page": {
+          "title": "Virgin Money <strong>Living</strong>",
+          "url": "/prototype/virgin/living",
+          "intro": "Smart suggestions and inspirational ideas from experts to help you plan the big decisions in your life"
+        },
+        "cards": [
+          {
+            "url": "",
+            "title": "Eight great ways to save money",
+            "teaser": "Marcus Webb | 5 min read"
+          },
+          {
+            "url": "",
+            "title": "Four smart ways to use your credit card",
+            "teaser": "Iona Bain | 3 min read"
+          }
+        ],
+        "pages": [
+          {
+            "title": "Being better with money",
+            "url": "/current-account/essential-current-account.jsp",
+            "icon": "living.svg#better-with-money"
+          },
+          {
+            "title": "Saving for the future",
+            "url": "/service/sign-in/?product:current-account&dd:0",
+            "icon": "living.svg#saving-for-future"
+          },
+          {
+            "title": "Travel and adventure",
+            "url": "/current-account/questions-and-answers/",
+            "icon": "living.svg#travel-adventure"
+          },
+          {
+            "title": "Buying a home",
+            "url": "/current-account/questions-and-answers/",
+            "icon": "living.svg#buying-home"
+          },
+          {
+            "title": "Looking after your loved ones",
+            "url": "/service/sign-in/?product:current-account&dd:0",
+            "icon": "living.svg#loved-ones"
+          },
+          {
+            "title": "Enjoying retirement",
+            "url": "/current-account/questions-and-answers/",
+            "icon": "living.svg#enjoying-retirement"
+          },
+          {
+            "title": "Giving something back",
+            "url": "/current-account/questions-and-answers/",
+            "icon": "living.svg#giving-back"
+          }
+        ]
+      }
+    }
+  ],
+  "secondary_pages": [
+    {
+      "title": "Help",
+      "url": "/contact/support-hub"
+    },
+    {
+      "title": "Find us",
+      "url": "/store-finder"
+    }
+  ],
+  "cta_pages": [
+    {
+      "title": "Savings",
+      "url": "/current-account",
+      "section": "savings-pages",
+      "icon": "vmg.svg#personal-fundraising"
+    },
+    {
+      "title": "Investments",
+      "url": "/current-account",
+      "section": "investments-pages",
+      "icon": "vmg.svg#personal-fundraising"
+    },
+    {
+      "title": "International money transfer",
+      "url": "/current-account",
+      "section": "investments-pages",
+      "icon": "vmg.svg#personal-fundraising"
+    },
+    {
+      "title": "Insurance",
+      "url": "/current-account",
+      "section": "insurances-pages",
+      "icon": "vmg.svg#personal-fundraising"
+    },
+    {
+      "title": "Cards",
+      "url": "/current-account",
+      "section": "cards-pages",
+      "icon": "vmg.svg#personal-fundraising"
+    },
+    {
+      "title": "Mortages",
+      "url": "/current-account",
+      "section": "mortgages-pages",
+      "icon": "vmg.svg#personal-fundraising"
+    },
+    {
+      "title": "Pensions",
+      "url": "/current-account",
+      "section": "pensions-pages",
+      "icon": "vmg.svg#personal-fundraising"
+    },
+    {
+      "title": "Currency",
+      "url": "/current-account",
+      "section": "currency-pages",
+      "icon": "vmg.svg#personal-fundraising"
+    }
+  ],
+  "navbar_class": "navbar--dual",
+  "cta": {
+    "title": "Sign in",
+    "url": "/signin"
+  }
+}

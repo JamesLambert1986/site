@@ -1,0 +1,110 @@
+{
+  "root": "/prototype/giving",
+  "siteName": "vmg",
+  "site_name": "Virgin Money Giving",
+  "css_file": "/public/stylesheets/vmstrap.css",
+  "nav_file": "_components/nav.html",
+  "scripts_file": "_includes/scripts.html",
+  "footer_file": "_prototype_components/footer-vmg.html",
+  "pages": [
+    {
+      "title": "Make a donation",
+      "url": "/vmg/donation",
+      "top_nav": "true"
+    },
+    {
+      "title": "Fundraisers",
+      "url": "",
+      "top_nav": "true",
+      "section": "fundraisers-pages",
+      "subnav": {
+        "type": "expanded",
+        "landing_page": {
+          "title": "Read more about <strong>fundraising</strong>",
+          "url": "/vmg/fundraisers"
+        },
+        "pages": [
+          {
+            "title": "Create a page",
+            "url": "/vmg/fundraisers/create-a-page",
+            "icon": "vmg.svg#personal-fundraising"
+          },
+          {
+            "title": "Fundraise as a team",
+            "url": "/vmg/fundraisers/",
+            "icon": "vmg.svg#team-fundraising"
+          },
+          {
+            "title": "Raise funds in memory",
+            "url": "/vmg/fundraisers/",
+            "icon": "vmg.svg#in-memory"
+          },
+          {
+            "title": "FAQs",
+            "url": "/vmg/fundraisers/",
+            "icon": "general.svg#faq"
+          },
+          {
+            "title": "Sign in",
+            "url": "/vmg/fundraisers/",
+            "icon": "general.svg#my-account"
+          }
+        ]
+      }
+
+    },
+    {
+      "title": "Charities",
+      "url": "",
+      "top_nav": "true",
+      "section": "charities-pages",
+      "subnav": {
+        "type": "expanded",
+        "landing_page": {
+          "title": "Find out how we help <strong>charities</strong>",
+          "url": "/vmg/charities"
+        },
+        "pages": [
+          {
+            "title": "Register your charity",
+            "url": "/vmg/fundraisers/create-a-page",
+            "icon": "general.svg#complete-form"
+          },
+          {
+            "title": "Best deal for charities",
+            "url": "/vmg/fundraisers/",
+            "icon": "general.svg#offers"
+          },
+          {
+            "title": "Help and guides",
+            "url": "/vmg/fundraisers/",
+            "icon": "general.svg#guide"
+          },
+          {
+            "title": "FAQs",
+            "url": "/vmg/fundraisers/",
+            "icon": "general.svg#faq"
+          },
+          {
+            "title": "Sign in",
+            "url": "/vmg/fundraisers/",
+            "icon": "general.svg#my-account"
+          }
+        ]
+      }
+
+    },
+    {
+      "title": "Businesses",
+      "url": "/vmg/businesses",
+      "top_nav": "true"
+    }
+  ],
+  "buttons": [
+    {
+      "title": "Account",
+      "url": "/fundraiser-portal/userSignIn",
+      "icon": "ui.svg#signin"
+    }
+  ]
+}

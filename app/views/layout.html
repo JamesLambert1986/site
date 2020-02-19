@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    {% import "_components/meta.html" as meta with context %}
+    {{ meta.write() }}
+
+    <link href="/public/stylesheets/styles-mobile.css?{{site.version}}" media="only screen and (max-width: 36em)" rel="stylesheet" />
+    <link href="/public/stylesheets/styles.css?{{site.version}}" media="only screen and (min-width: 36em)" rel="stylesheet" />
+    <script>
+      if (!window.CSS || !window.CSS.supports || !window.CSS.supports('(--foo: red)')) {
+          var head = document.querySelector('head');
+          head.innerHTML += '<link href="/public/stylesheets/styles-compatible.css?{{site.version}}" rel="stylesheet">';
+      }
+    </script>
+    <link href="/public/stylesheets/lint.css?{{site.version}}" media="screen" rel="stylesheet" />
+
+  </head>
+  <body id="top" class="{% if path.level1 %}{{path.level1}}{% else %}homepage{% endif %} {{page.body_class}} {{get.body_class}}" data-assets-folder="/public">
+
+    {% include "_components/svg-ref.html" %}
+    <!-- static svgs -->
+    
+	  <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <!-- Navigation -->
+    {% import "_components/header.html" as navigation with context %}
+    {{ navigation.write(site) }}
+
+    <!-- Main Content -->    
+    <main id="content">
+      {{ page.content | safe }}
+    </main>
+    <!-- Footer -->
+    {% import "_components/footer.html" as footer with context %}
+    {{ footer.write(site) }}
+    
+    <!-- Scripts -->
+    <script src="/public/scripts/libs/jquery-3.4.1.slim.min.js"></script><!-- min version -->
+    <script src="/public/scripts/libs/jquery.inview.min.js"></script>
+    <!-- Scripts -->
+    <script src="/public/scripts/scripts.js"></script>
+    <!--  Icons fix for ie11 -->
+    <script src="/public/scripts/libs/svg-sprite-polyfill.min.js"></script>
+
+
+    {% if static %}
+    <script>
+    if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("[PWA Builder] active service worker found, no need to register");
+      } else {
+        // Register the service worker
+        navigator.serviceWorker
+          .register("sw.js", {
+            scope: "./"
+          })
+          .then(function (reg) {
+            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+          });
+      }
+    }
+    </script>
+    {% endif %}
+  </body>
+</html>

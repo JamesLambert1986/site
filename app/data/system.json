@@ -1,0 +1,351 @@
+{
+  "root": "/",
+  "year": "2020",
+  "asset_url": "/public/",
+  "site_name": "Virgin Money design system",
+  "css_file": "/public/stylesheets/system.css",
+  "nav_file": "_components/navbar.html",
+  "footer_file": "_system_components/footer.html",
+  "scripts_file": "_system_components/scripts.html",
+  "version": "1.0.0",
+  "container_vars": [
+    {
+      "name": "container_id",
+      "options": "string",
+      "notes": "Must be unique to the page. While not always required some components do need them to function correctly."
+    },
+    {
+      "name": "container_background",
+      "options": "{bg-light, bg-dark, bg-gradient-primary, bg-gradient-secondary, etc...}",
+      "notes": "Uses a set of pre-defined colours and gradients."
+    },
+    {
+      "name": "container_text_align",
+      "options": "{left, center}",
+      "notes": "Controls the text alignment of container and its children. It does not control any other alignment styling like floating right or vertical alignment."
+    },
+    {
+      "name": "container_class",
+      "options": "string",
+      "notes": "Mianly used to create a modified version of a container, i.e. <strong>container--outer</strong>. But can also be used to add in utility classes to change the behavour and look of a component. For example <strong>mb-0</strong> can remove the margin bottom of the container."
+    },
+    {
+      "name": "container_header_content",
+      "options": "html",
+      "notes": "Should mainly contain stuff like heading and straplines."
+    },
+    {
+      "name": "container_footer_content",
+      "options": "html",
+      "notes": "Should mainly contain call to actions and buttons."
+    },
+    {
+      "name": "container_no_animate",
+      "options": "{yes,no}",
+      "notes": "Prevents the container being loaded in with animation, so it will not fade in or move up but be static on the page at all times."
+    }
+  ],
+  "navbar_class": "navbar--dual",
+  "pages": [
+    {
+      "title": "About Pitch",
+      "url": "/about"
+    },
+    {
+      "title": "Framework",
+      "url": "#framework",
+      "categories": [
+        {
+          "title": "Styles",
+          "url": "#styles"
+        },
+        {
+          "title": "Elements",
+          "url": "#elements"
+        },
+        {
+          "title": "Components",
+          "url": "#components"
+        },
+        {
+          "title": "Patterns",
+          "url": "#patterns"
+        },
+        {
+          "title": "Templates",
+          "url": "#templates"
+        }
+      ]
+    },
+    {
+      "title": "Community",
+      "url": "/community"
+    }
+  ],
+  "secondary_pages": [
+    {
+      "title": "Contact us",
+      "url": "/contact"
+    }
+  ],
+  "cta": {
+    "title": "Get Started",
+    "url": "/get-started"
+  },
+  "system_nav": true,
+  "styles": [
+    {
+      "title": "Logos",
+      "url": "logos"
+    },
+    {
+      "title": "Fonts",
+      "url": "fonts"
+    },
+    {
+      "title": "Colours",
+      "url": "colours"
+    },
+    {
+      "title": "Colour Combinations",
+      "url": "colour-combinations"
+    },
+    {
+      "title": "Patterns",
+      "url": "pattern-styles"
+    },
+    {
+      "title": "Pattern Backgrounds",
+      "url": "pattern-backgrounds"
+    },
+    {
+      "title": "Icons",
+      "url": "icons"
+    },
+    {
+      "title": "Spacing",
+      "url": "spacing"
+    },
+    {
+      "title": "Utility Classes",
+      "url": "utility-classes"
+    }
+  ],
+  "elements": [
+    {
+      "title": "Headings",
+      "url": "headings"
+    },
+    {
+      "title": "Typography",
+      "url": "typography"
+    },
+    {
+      "title": "Tooltips",
+      "url": "tooltips"
+    },
+    {
+      "title": "Buttons",
+      "url": "buttons"
+    },
+    {
+      "title": "Form inputs",
+      "url": "inputs"
+    },
+    {
+      "title": "Tables",
+      "url": "tables"
+    }
+  ],
+  "components": [
+    {
+      "title": "Navbar",
+      "url": "navbar",
+      "file": "navbar"
+    },
+    {
+      "title": "Menu",
+      "url": "menu",
+      "file": "navbar"
+    },
+    {
+      "title": "Footer",
+      "url": "footer",
+      "file": "footer"
+    },
+    {
+      "title": "Banner",
+      "url": "banner",
+      "file": "banner"
+    },
+    {
+      "title": "Container",
+      "url": "container",
+      "file": "container"
+    },
+    {
+      "title": "Modal",
+      "url": "modal",
+      "file": "modal"
+    },
+    {
+      "title": "Card Deck",
+      "url": "card-deck",
+      "file": "card-deck"
+    },
+    {
+      "title": "Product card",
+      "url": "product-card",
+      "file": "product-card"
+    },
+    {
+      "title": "Alert",
+      "url": "alert",
+      "file": "alert"
+    },
+    {
+      "title": "Notification",
+      "url": "notification",
+      "file": "notification"
+    },
+    {
+      "title": "Accordion",
+      "url": "accordion",
+      "file": "accordion"
+    },
+    {
+      "title": "Tabs",
+      "url": "tabs",
+      "file": "tabs"
+    },
+    {
+      "title": "Content list",
+      "url": "content-list",
+      "file": "content-list"
+    },
+    {
+      "title": "Pagination",
+      "url": "pagination",
+      "file": "pagination"
+    },
+    {
+      "title": "Index",
+      "url": "index-component",
+      "file": "_index"
+    },
+    {
+      "title": "Image Grid",
+      "url": "img-grid",
+      "file": "img-grid"
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Page contents",
+      "url": "page-contents"
+    },
+    {
+      "title": "Page contents - Guide",
+      "url": "page-contents-guide"
+    },
+    {
+      "title": "Related content",
+      "url": "related-content"
+    },
+    {
+      "title": "Statement",
+      "url": "statement"
+    },
+    {
+      "title": "Card Deck Layout",
+      "url": "card-deck-layouts"
+    }
+  ],
+  "templates": [
+    {
+      "title": "Archive",
+      "status": "",
+      "url": "archive"
+    },
+    {
+      "title": "Collection",
+      "status": "",
+      "url": "collection"
+    },
+    {
+      "title": "Contact Info",
+      "status": "",
+      "url": "contact_info"
+    },
+    {
+      "title": "Corporate Info",
+      "status": "",
+      "url": "corporate_info"
+    },
+    {
+      "title": "Criterion",
+      "status": "",
+      "url": "criterion"
+    },
+    {
+      "title": "Detailed Guide",
+      "status": "",
+      "url": "detailed_guide"
+    },
+    {
+      "title": "FAQ",
+      "status": "",
+      "url": "faq"
+    },
+    {
+      "title": "Feature",
+      "status": "",
+      "url": "feature"
+    },
+    {
+      "title": "How to",
+      "status": "",
+      "url": "how_to"
+    },
+    {
+      "title": "Notification",
+      "status": "",
+      "url": "notification"
+    },
+    {
+      "title": "Product Category",
+      "status": "",
+      "url": "product_category"
+    },
+    {
+      "title": "Index",
+      "status": "",
+      "url": "index_template"
+    },
+    {
+      "title": "Product Range (Learn)",
+      "status": "",
+      "url": "product_range_learn"
+    },
+    {
+      "title": "Product Range (Tools)",
+      "status": "",
+      "url": "product_range_tools"
+    },
+    {
+      "title": "Product Type",
+      "status": "",
+      "url": "product_type"
+    },
+    {
+      "title": "Error",
+      "status": "",
+      "url": "error"
+    },
+    {
+      "title": "Form",
+      "status": "",
+      "url": "form"
+    }
+  ]
+}

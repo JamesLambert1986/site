@@ -1,0 +1,45 @@
+{
+  "root":"/prototype/careers/",
+  "siteName":"careers",
+  "css_file": "/public/stylesheets/vmstrap.css",
+  "nav_file": "_components/nav.html",
+  "site_name":"Virgin Money Careers",
+  "footer_file" : "_prototype_components/footer-vmg.html",
+  "scripts_file": "_system_components/scripts.html",
+  "pages": [
+    {
+      "title":"Deciding to apply",
+      "url":"/prototype/careers/deciding-apply",
+      "top_nav":"true"
+    },
+    {
+      "title":"The perks",
+      "url":"/prototype/careers/perks",
+      "top_nav":"true"
+    },
+    {
+      "title":"EBO",
+      "url":"/prototype/careers/ebo",
+      "top_nav":"true"
+    },
+    {
+      "title":"Doing good in the world",
+      "url":"/prototype/careers/good",
+      "top_nav":"true"
+    }
+  ],
+  "supporting_pages": [
+    {
+      "title":"Contact us",
+      "url":"/prototype/careers/contact-us"
+    }
+  ],
+  "buttons": [
+    {
+      "title":"Job search",
+      "url":"/prototype/careers/search",
+      "icon_class":"stroke",
+      "icon":"general.svg#search"
+    }
+  ]
+}
