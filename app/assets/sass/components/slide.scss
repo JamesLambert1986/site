@@ -1,0 +1,23 @@
+.slide {
+  background: $color1;
+
+  height: 100vh;
+  max-height: 100vh;
+  overflow: auto;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left:0;
+  display: flex;
+  align-items: center;
+
+  
+
+  &.first {
+    z-index: 5;
+  }
+
+  &:target {
+    z-index: 10;
+  }
+}

@@ -9628,4 +9628,28 @@ a.text-dark.hover, a.text-dark.focus {
   }
 }
 
+/* Coolors Exported Palette - coolors.co/eec643-f99302-bf211e-094074-aaabbc */
+/* HSL */
+/* RGB */
+.slide {
+  background: #eec643;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: auto;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.slide.first {
+  z-index: 5;
+}
+
+.slide:target {
+  z-index: 10;
+}
+
 /*# sourceMappingURL=maps/styles.css.map */
