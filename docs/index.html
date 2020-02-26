@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    
+    
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  
+  <!-- Client Hints -->
+  <!-- FUTURE USE <meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" /> -->
+  <!-- Disable automatic detection and formatting of possible phone numbers -->
+  <meta name="format-detection" content="telephone=no" />
+  
+  <!-- APP Manifest -->
+  <!--<link rel="manifest" href="assets/manifest.json" />-->
+
+  <!-- Apple -->
+  <!--<link rel="apple-touch-icon" href="assets/favicons/vm/icon-192x192.png" />!-- 180 x 180 -->
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Windows -->
+  <meta name="application-name" content="James Lambert" />
+  <meta name="msapplication-TileColor" content="#ffffff" /><!-- VM Red -->
+  <!--<meta name="msapplication-TileImage" content="assets/favicons/vm/icon-144x144.png" />!-- 144 x 144 -->
+
+  <!-- Android -->
+  <meta name="theme-color" content="#e10a0a" /><!-- VM Red -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  
+  <!-- Basic Meta Data -->
+  <!--<link rel="icon" type="image/png" href="assets/favicons/vm/icon-72x72.png">-->
+  
+  <title>What is Regression testing | James Lambert</title>
+  
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  
+  <!-- Duplicate basic Meta for Open Graph -->
+  <meta property="og:title" content="What is Regression testing" />
+  <meta property="og:description" content="" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="James Lambert" />
+  <meta name="twitter:creator" content="Virgin Money" />
+
+  <meta property="og:image" content="" /><!-- 1200 x 630 for large image - 600 x 314 for small image -->
+
+
+
+
+    <link href="assets/stylesheets/styles-mobile.css?1.0.0" media="only screen and (max-width: 36em)" rel="stylesheet" />
+    <link href="assets/stylesheets/styles.css?1.0.0" media="only screen and (min-width: 36em)" rel="stylesheet" />
+    <script>
+      if (!window.CSS || !window.CSS.supports || !window.CSS.supports('(--foo: red)')) {
+          var head = document.querySelector('head');
+          head.innerHTML += '<link href="assets/stylesheets/styles-compatible.css?1.0.0" rel="stylesheet">';
+      }
+    </script>
+    <link href="assets/stylesheets/lint.css?1.0.0" media="screen" rel="stylesheet" />
+
+  </head>
+  <body id="top" class="homepage  " data-assets-folder="/public">
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="sr-only">
+    <defs>
+        <linearGradient id="gradient-primary">
+        <stop offset="0%" stop-color="#e10a0a" />
+        <stop offset="90%" stop-color="#BD1F66" />
+        </linearGradient>
+
+        <linearGradient id="gradient-primary-down" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="#e10a0a" />
+        <stop offset="90%" stop-color="#BD1F66" />
+        </linearGradient>
+
+
+        <linearGradient id="gradient-secondary">
+        <stop offset="5%" stop-color="#BD1F66" />
+        <stop offset="95%" stop-color="#793772" />
+        </linearGradient>
+
+
+        <linearGradient id="gradient-secondary-down" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="30%" stop-color="#BD1F66" />
+        <stop offset="95%" stop-color="#793772" />
+        </linearGradient>
+
+        <linearGradient id="gradient-gauge" x1="0%" x2="100%" y1="50%" y2="50%">
+        <stop offset="0" stop-color="#4eb4ae" />
+        <stop offset="1" stop-color="#6db644"/>
+        </linearGradient>
+
+
+        <symbol id="pattern-repeat" viewbox="0 0 1255 320">
+  
+  <path d="M1252.16,304c-46.76,0-81.22-33.47-81.22-86.81V56.88c0-24.34,13.76-40.85,34.47-40.85C1224.87,16,1239,32.4,1239,53c0,15.21-5.67,29.32-17.2,46.44L1105.07,269.76c-16.92,24.46-28.46,34.24-46.52,34.24-21.39,0-38.21-13.9-38.21-42.75V64.06c0-28.86-16.79-48-41.24-48-17.39,0-30,8.07-44.34,29.14l-119.38,176c-12.08,17.15-18.09,30.13-18.09,45.83,0,18.76,14.13,37,35.9,37,21,0,36.56-18.7,36.56-44.31V102.81c0-53.34-34.47-86.81-81.22-86.81S707.3,49.47,707.3,102.81V217.19c0,53.34-34.46,86.81-81.22,86.81s-81.22-33.47-81.22-86.81V56.88c0-24.34,13.76-40.85,34.47-40.85C598.79,16,613,32.4,613,53c0,15.21-5.67,29.32-17.2,46.44L479,269.76C462.07,294.22,450.53,304,432.47,304c-21.39,0-38.21-13.9-38.21-42.75V64.06c0-28.86-16.8-48-41.25-48-17.38,0-30,8.07-44.33,29.14l-119.38,176c-12.08,17.15-18.09,30.13-18.09,45.83,0,18.76,14.13,37,35.9,37,21,0,36.56-18.7,36.56-44.31V102.81C243.67,49.47,209.2,16,162.45,16S81.22,49.47,81.22,102.81V217.19C81.22,270.53,46.76,304,0,304" stroke="black" stroke-width="32px" fill="none" />
+
+</symbol>
+
+    </defs>
+    
+
+</svg>
+    <!-- static svgs -->
+    
+	  <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <!-- Navigation -->
+    
+    
+
+<footer class="container footer bg-dark-2 pattern pattern--bottom">
+
+</footer>
+
+
+
+    <!-- Main Content -->    
+    <main id="content">
+      
+<div class="slide first">
+<div class='container '><h1 id="pagetitle">What is Regression testing</h1>
+<ul>
+<li>A series of non-functional re-tests</li>
+<li>Run after bug fixing or code changes</li>
+<li>Provides certainty that changes made have minimal impact</li>
+<li>Tracking the quality, validity and size</li>
+</ul>
+<div><a href="#relate" class="btn btn-primary">How does it relate to CSS</a></div>
+
+</div>
+</div>
+
+<div class="slide" id="relate">
+<div class='container '><h2>How does it relate to CSS</h2>
+
+<ul>
+<li>The cascade and specificity can easily cause side effects</li>
+<li>Updates can conflict with pre-existing rules</li>
+<li>Pre-compilers can drastically increase file size</li>
+<li>Small changes may impact previous testing results (accessibility, validation)</li>
+</ul>
+<div><a href="#automated" class="btn btn-primary">Automated over manaual</a></div>
+
+</div>
+</div>
+
+<div class="slide" id="automated">
+<div class='container '><h2>Automated over manaual</h2>
+
+<ul>
+<li>Time consuming and prone to user error</li>
+<li>Can be run over night if large</li>
+<li>Be included into a build/release process</li>
+<li>Re-used for cross browser testing</li>
+</ul>
+<div><a href="#types" class="btn btn-primary">Types of testing</a></div>
+
+</div>
+</div>
+
+<div class="slide" id="types">
+<div class='container '><h2>Types of testing</h2>
+
+<ul>
+<li>Pull requests</li>
+<li>CSS regression tests</li>
+<li>Sass regression tests</li>
+<li>Visual regression tests</li>
+<li>Auditing</li>
+</ul>
+<div><a href="#pull" class="btn btn-primary">Pull requests</a></div>
+
+</div>
+</div>
+
+
+<div class="slide" id="pull">
+<div class='container '><h2 id="pull-requests">Pull requests</h2>
+<ul>
+<li>A second set of eyes</li>
+<li>Background knowledge of the project</li>
+<li>Offer another solution</li>
+<li>Check CSS is readable and maintainable</li>
+</ul>
+<div><a href="#css" class="btn btn-primary">CSS regression</a></div>
+
+</div>
+</div>
+
+
+<div class="slide" id="css">
+<div class='container '><h2 id="css-regression">CSS regression</h2>
+<ul>
+<li>Test the computed styles of elements</li>
+<li>Test against requirements not everything</li>
+<li>You may need to sanitise values with helper functions</li>
+<li>Accept not everything can be tested</li>
+</ul>
+<div><a href="#sass" class="btn btn-primary">Sass regression</a></div>
+
+</div>
+</div>
+
+<!-- Jump to code - Show an example of a test and run the test. Update some CSS and see it fail. -->
+
+<div class="slide" id="sass">
+<div class='container '><h2 id="sass-regression">Sass regression</h2>
+<ul>
+<li>More like unit tests with inputs and outputs</li>
+<li>Test variables, extends, functions and mixins</li>
+<li>Test re-usable code</li>
+</ul>
+<div><a href="#visual" class="btn btn-primary">Visual regression</a></div>
+
+</div>
+</div>
+
+<!-- Jump to code - Show an example of a test and run the test. Update some CSS and see it fail. -->
+
+<div class="slide" id="visual">
+<div class='container '><h2 id="visual-regression">Visual regression</h2>
+<ul>
+<li>Compare a series of components with reference images</li>
+<li>Setup a kitchen sink of components to test</li>
+<li>Test different variants of the components</li>
+<li>Automate the creation of the config file</li>
+</ul>
+<div><a href="#auditing" class="btn btn-primary">Auditing</a></div>
+
+</div>
+</div>
+
+<!-- Jump to code - Show the kitchen sink, run visual test and look at the diff -->
+
+<div class="slide" id="auditing">
+<div class='container '><h2 id="auditing">Auditing</h2>
+<ul>
+<li>Generate stats</li>
+<li>Monitor the file size</li>
+<li>Validation</li>
+<li>Create a readable summary </li>
+</ul>
+<div><a href="#why" class="btn btn-primary">Why bother</a></div>
+
+</div>
+</div>
+
+<!-- Jump to code - audit page -->
+
+<div class="slide" id="why">
+<div class='container '><h2 id="why-bother">Why bother</h2>
+<ul>
+<li>Is it overkill</li>
+<li>Prevent bugs before getting into test</li>
+<li>Scale the level of test to the project type</li>
+<li>Release changes with greater confidence</li>
+</ul>
+<div><a href="#questions" class="btn btn-primary">Questions</a></div>
+
+</div>
+</div>
+
+<div class="slide" id="questions">
+<div class='container '><h2 id="any-questions">Any questions?</h2>
+</div>
+</div>
+
+
+    </main>
+    <!-- Footer -->
+    
+    
+
+<footer class="container footer bg-dark-2 pattern pattern--bottom">
+
+</footer>
+
+
+    
+    <!-- Scripts -->
+    <script src="assets/scripts/libs/jquery-3.4.1.slim.min.js"></script><!-- min version -->
+    <script src="assets/scripts/libs/jquery.inview.min.js"></script>
+    <!-- Scripts -->
+    <script src="assets/scripts/scripts.js"></script>
+    <!--  Icons fix for ie11 -->
+    <script src="assets/scripts/libs/svg-sprite-polyfill.min.js"></script>
+
+
+    
+    <script>
+    if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("[PWA Builder] active service worker found, no need to register");
+      } else {
+        // Register the service worker
+        navigator.serviceWorker
+          .register("sw.js", {
+            scope: "./"
+          })
+          .then(function (reg) {
+            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+          });
+      }
+    }
+    </script>
+    
+  </body>
+</html>
