@@ -176,10 +176,12 @@ gulp.task('visual-regression-approve', function (done) {
   }
 
   // Copy the summary into summary-develop
+  /*
   fs.copyFile('./audit/summary.json', './audit/summary-develop.json', (err) => {
     if (err) throw err;
     console.log('source.txt was copied to destination.txt');
   });
+  */
 })
 
 
