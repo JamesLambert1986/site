@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@import '../../node_modules/sass-true/sass/true';
+
+
+$compatible: 'false';
+$mobile: 'false';
+
+// Functions EXTEND
+@import "../../app/assets/sass/_includes";
+
+// mixins
+@import "_tests/mixins.spec";

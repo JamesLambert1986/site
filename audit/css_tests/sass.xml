@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0010" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2020-02-26T21:28:05" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="var [Mixin]" timestamp="2020-02-26T21:28:05" tests="1" file="C:\GitHub\site\unit_tests\sass.js" time="0.0010" failures="0">
+    <testcase name="var [Mixin] Var mixin returns the colour heading as a CSS variable" time="0.0010" classname="Var mixin returns the colour heading as a CSS variable">
+    </testcase>
+  </testsuite>
+</testsuites>

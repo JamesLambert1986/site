@@ -1,0 +1,7 @@
+
+@mixin var($property, $varName, $important:"") {
+
+  #{$property}: map-get($vars, $varName) #{$important};
+  #{$property}: var(#{$varName}) #{$important};
+}
+  

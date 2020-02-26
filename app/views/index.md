@@ -8,7 +8,7 @@ title: What is Regression testing
 # {{page.title}}
 
 - A series of non-functional re-tests
-- Ran after a bug fixing or code changes
+- Run after bug fixing or code changes
 - Provides certainty that changes made have minimal impact
 - Tracking the quality, validity and size
 
@@ -85,13 +85,14 @@ title: What is Regression testing
 - Test the computed styles of elements
 - Test against requirements not everything
 - You may need to sanitise values with helper functions
-- Accept not evertyhing can be tested
+- Accept not everything can be tested
 
 <div><a href="#sass" class="btn btn-primary">Sass regression</a></div>
 
 ===
 </div>
 
+<!-- Jump to code - Show an example of a test and run the test. Update some CSS and see it fail. -->
 
 <div class="slide" id="sass">
 ===
@@ -99,28 +100,69 @@ title: What is Regression testing
 ## Sass regression
 
 - More like unit tests with inputs and outputs
-- Test variables, extensions, functions and mixins
-- 
-- 
+- Test variables, extends, functions and mixins
+- Test re-usable code
 
 <div><a href="#visual" class="btn btn-primary">Visual regression</a></div>
 
 ===
 </div>
 
-
+<!-- Jump to code - Show an example of a test and run the test. Update some CSS and see it fail. -->
 
 <div class="slide" id="visual">
 ===
 
 ## Visual regression
 
-- More like unit tests with inputs and outputs
-- Test variables, extends, functions and mixins
-- Make sure th
-- 
+- Compare a series of components with reference images
+- Setup a kitchen sink of components to test
+- Test different variants of the components
+- Automate the creation of the config file
 
 <div><a href="#auditing" class="btn btn-primary">Auditing</a></div>
+
+===
+</div>
+
+<!-- Jump to code - Show the kitchen sink, run visual test and look at the diff -->
+
+<div class="slide" id="auditing">
+===
+
+## Auditing
+
+- Generate stats
+- Monitor the file size
+- Validation
+- Create a readable summary 
+
+<div><a href="#why" class="btn btn-primary">Why bother</a></div>
+
+===
+</div>
+
+<!-- Jump to code - audit page -->
+
+<div class="slide" id="why">
+===
+
+## Why bother
+
+- Is it overkill
+- Prevent bugs before getting into test
+- Scale the level of test to the project type
+- Release changes with greater confidence
+
+<div><a href="#questions" class="btn btn-primary">Questions</a></div>
+
+===
+</div>
+
+<div class="slide" id="questions">
+===
+
+## Any questions?
 
 ===
 </div>

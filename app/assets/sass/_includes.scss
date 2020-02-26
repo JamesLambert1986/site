@@ -44,7 +44,11 @@
  @import "bootstrap-4.4.1/print";
  
 
-@import "_variables/variables";
+ @import "_variables/variables";
+ @import "_variables/mixins";
 
 @import "components/slide";
+@import "components/heading";
+
+
  

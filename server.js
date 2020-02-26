@@ -71,7 +71,7 @@ app.use('/unit_tests', express.static(path.join(__dirname, '/unit_tests')))
 app.use('/backstop_data', express.static(path.join(__dirname, '/backstop_data')))
 
 // Elements refers to icon folder instead of images folder
-//app.use(favicon(path.join(__dirname, 'app', 'assets', 'images', 'favicon.ico')))
+app.use(favicon(path.join(__dirname, 'app', 'assets', 'images', 'favicon.ico')))
 
 app.use('/sw.js',express.static(path.join(__dirname, '/public/sw.js')))
 

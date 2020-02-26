@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  
+  <!-- Client Hints -->
+  <!-- FUTURE USE <meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" /> -->
+  <!-- Disable automatic detection and formatting of possible phone numbers -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <style>
+  #content > .container > * {
+    opacity: 1!important;
+    transform: none!important;
+    transition: none!important;
+  }
+  </style>
+
+</head>
+<body id="top">
+
+  <div id="test"><!-- INSERT: Component html --></div>
+
+  <!-- The scripts need to be in the body DOM element, as some test running frameworks need the body
+      to have already been created so they can insert their magic into it. For example, if loaded
+      before body, Angular Scenario test framework fails to find the body and crashes and burns in
+      an epic manner. -->
+  <script src="context.js"></script>
+  <script type="text/javascript">
+    // Configure our Karma and set up bindings
+    %CLIENT_CONFIG%
+    window.__karma__.setupContext(window);
+
+    // All served files with the latest timestamps
+    %MAPPINGS%
+  </script>
+  <!-- Dynamically replaced with <script> tags -->
+  %SCRIPTS%
+  <!-- Since %SCRIPTS% might include modules, the `loaded()` call needs to be in a module too.
+  This ensures all the tests will have been declared before karma tries to run them. -->
+  <script type="module">
+    window.__karma__.loaded();
+  </script>
+  <script nomodule>
+    window.__karma__.loaded();
+  </script>
+
+</body>
+</html>

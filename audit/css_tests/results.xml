@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 80.0.3987 (Windows 10.0.0)" package="" timestamp="2020-02-26T21:24:46" id="0" hostname="DESKTOP-DN2SUOJ" tests="1" errors="0" failures="0" time="0.176">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/80.0.3987.116 Safari/537.36"/>
+  </properties>
+  <testcase name="h1  By default h1 should be brand red colour" time="0.176" classname="h1 "/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

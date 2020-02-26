@@ -1,0 +1,16 @@
+/*#region var*/
+@include describe('var [Mixin]') {
+  @include it('Var mixin returns the colour heading as a CSS variable') {
+    // Assert the expected results
+    @include assert {
+      @include output {
+        @include var(color,--colour-primary);
+      }
+      @include expect {
+        color: #E10A0A;
+        color: var(--colour-primary);
+      }
+    }
+  }
+}
+/*#endregion*/
