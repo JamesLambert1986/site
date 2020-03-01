@@ -66,13 +66,9 @@ gulp.task('build',
 gulp.task('audit',
 
   gulp.series(
-    'build',
-    'audit-html',
-    'audit-html-accessibility',
+    //'build',
     'audit-css',
     'audit-css-stats',
-    'audit-js-size',
-    'audit-assets',
     'audit-summary'
   )
 );
@@ -82,10 +78,8 @@ gulp.task('audit',
 gulp.task('unit-tests', 
   
   gulp.series(
-    'unit-tests-js',
     'unit-tests-sass',
     'unit-tests-css',
-    'unit-tests-xml-json',
     'unit-tests-css-xml-json',
     'unit-tests-sass-xml-json'
   )
@@ -95,7 +89,7 @@ gulp.task('unit-tests',
 gulp.task('visual-regression', 
   
   gulp.series(
-  'server',
+  //'server',
   'audit-visual-regression-clean',
   'audit-visual-regression-run',
   'audit-visual-regression-move-timestamp-folder-images',
@@ -119,23 +113,5 @@ gulp.task('approve',
   gulp.series(
     'visual-regression-approve-clean',
     'visual-regression-approve'
-  )
-);
-
-
-
-// Creates a static version of the prototype folder
-// We still use the public folder for the assets we need to run that task
-// Then we cleanup and the write the html files
-gulp.task('static', 
-  
-  gulp.series(
-    'build',
-    'static-clean',
-    'static-assets',
-    'static-move-sw',
-    'static-stylesheets-min',
-    'static-scripts-min',
-    'static-html'
   )
 );

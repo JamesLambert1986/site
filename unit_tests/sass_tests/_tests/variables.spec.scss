@@ -1,0 +1,21 @@
+$test_colors: ();
+$test_colors: map-merge((
+  "primary": #E10A0A,
+), $test_colors);
+
+
+@include describe('Colour variables are added to the global var array [Variable]') {
+  @each $color, $value in $test_colors {
+
+    @include it($color+' colour variable is added to the global var array with the correct hex code') {
+      @include assert {
+        @include output {
+          color: map-get($vars, --colour-#{$color});
+        }
+        @include expect {
+          color: $value;
+        }
+      }
+    }
+  }
+}

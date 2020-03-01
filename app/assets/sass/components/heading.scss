@@ -1,5 +1,6 @@
 h1 {
-  color: var(--colour-primary);
+  
+  @include var(color,--colour-primary);
 }
 
 @media (min-width: 1200px){

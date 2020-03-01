@@ -1,0 +1,514 @@
+{
+  "validity": false,
+  "errors": [
+    {
+      "line": "5510",
+      "errortype": "parse-error",
+      "context": ".toast",
+      "errorsubtype": "\n                                exp\n                            ",
+      "skippedstring": "blur(10px)",
+      "type": "noexistence-at-all",
+      "message": "Property “backdrop-filter” doesn't exist :",
+      "error": "\n                        "
+    }
+  ],
+  "warnings": [
+    {
+      "line": "47",
+      "level": "0",
+      "message": "“-webkit-text-size-adjust” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "48",
+      "level": "0",
+      "message": "“-webkit-tap-highlight-color” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "57",
+      "level": "0",
+      "message": "“-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "229",
+      "level": "0",
+      "message": "“5px auto -webkit-focus-ring-color” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "261",
+      "level": "0",
+      "message": "“-webkit-appearance” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "271",
+      "level": "0",
+      "message": "“::-moz-focus-inner” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "272",
+      "level": "0",
+      "message": "“::-moz-focus-inner” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "273",
+      "level": "0",
+      "message": "“::-moz-focus-inner” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "274",
+      "level": "0",
+      "message": "“::-moz-focus-inner” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "289",
+      "level": "0",
+      "message": "“-webkit-appearance” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "320",
+      "level": "0",
+      "message": "“::-webkit-inner-spin-button” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "321",
+      "level": "0",
+      "message": "“::-webkit-outer-spin-button” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "327",
+      "level": "0",
+      "message": "“-webkit-appearance” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "330",
+      "level": "0",
+      "message": "“::-webkit-search-decoration” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "331",
+      "level": "0",
+      "message": "“-webkit-appearance” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "334",
+      "level": "0",
+      "message": "“::-webkit-file-upload-button” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "336",
+      "level": "0",
+      "message": "“-webkit-appearance” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "1795",
+      "level": "0",
+      "message": "“-webkit-overflow-scrolling” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "1807",
+      "level": "0",
+      "message": "“-webkit-overflow-scrolling” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "1819",
+      "level": "0",
+      "message": "“-webkit-overflow-scrolling” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "1831",
+      "level": "0",
+      "message": "“-webkit-overflow-scrolling” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "1842",
+      "level": "0",
+      "message": "“-webkit-overflow-scrolling” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "1865",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "1871",
+      "level": "0",
+      "message": "“::-ms-expand” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "1876",
+      "level": "0",
+      "message": "“:-moz-focusring” is an unknown vendor extended pseudo-class",
+      "type": "vendor-ext-pseudo-class",
+      "warning": "\n                        "
+    },
+    {
+      "line": "1899",
+      "level": "0",
+      "message": "“::-ms-value” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "2307",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "2938",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "2959",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3655",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3692",
+      "level": "0",
+      "message": "“::-ms-value” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3708",
+      "level": "0",
+      "message": "“::-ms-expand” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3712",
+      "level": "0",
+      "message": "“:-moz-focusring” is an unknown vendor extended pseudo-class",
+      "type": "vendor-ext-pseudo-class",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3813",
+      "level": "0",
+      "message": "“::-webkit-slider-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3817",
+      "level": "0",
+      "message": "“::-moz-range-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3821",
+      "level": "0",
+      "message": "“::-ms-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3825",
+      "level": "0",
+      "message": "“::-moz-focus-outer” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3829",
+      "level": "0",
+      "message": "“::-webkit-slider-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3840",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3841",
+      "level": "0",
+      "message": "“::-webkit-slider-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3846",
+      "level": "0",
+      "message": "“::-webkit-slider-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3850",
+      "level": "0",
+      "message": "“::-webkit-slider-runnable-track” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3860",
+      "level": "0",
+      "message": "“::-moz-range-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3870",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3871",
+      "level": "0",
+      "message": "“::-moz-range-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3876",
+      "level": "0",
+      "message": "“::-moz-range-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3880",
+      "level": "0",
+      "message": "“::-moz-range-track” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3890",
+      "level": "0",
+      "message": "“::-ms-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3903",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3904",
+      "level": "0",
+      "message": "“::-ms-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3909",
+      "level": "0",
+      "message": "“::-ms-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3913",
+      "level": "0",
+      "message": "“::-ms-track” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3923",
+      "level": "0",
+      "message": "“::-ms-fill-lower” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3928",
+      "level": "0",
+      "message": "“::-ms-fill-upper” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3934",
+      "level": "0",
+      "message": "“::-webkit-slider-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3938",
+      "level": "0",
+      "message": "“::-webkit-slider-runnable-track” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3942",
+      "level": "0",
+      "message": "“::-moz-range-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3946",
+      "level": "0",
+      "message": "“::-moz-range-track” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3950",
+      "level": "0",
+      "message": "“::-ms-thumb” is an unknown vendor extended pseudo-element",
+      "type": "vendor-ext-pseudo-element",
+      "warning": "\n                        "
+    },
+    {
+      "line": "3960",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "4773",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "5107",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "5122",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "5579",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "5758",
+      "level": "0",
+      "message": "“-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "5871",
+      "level": "0",
+      "message": "“-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "6055",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "6097",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "6120",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "6191",
+      "level": "0",
+      "message": "“prefers-reduced-motion” is an unknown vendor extension",
+      "type": "vendor-extension",
+      "warning": "\n                        "
+    },
+    {
+      "line": "9536",
+      "level": "0",
+      "message": "The value “break-word” is deprecated",
+      "type": "deprecated",
+      "warning": "\n                        "
+    }
+  ]
+}

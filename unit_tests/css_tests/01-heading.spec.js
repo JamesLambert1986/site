@@ -1,5 +1,5 @@
 
-describe('h1 ', function() {
+describe('h1', function() {
 
   before(function(done) { frame = quixote.createFrame(options, done); });
   after(function() { frame.remove(); });
@@ -15,7 +15,7 @@ describe('h1 ', function() {
     elementListLength = elementList.length();
   });
 
-  it('By default h1 should be brand red colour', function() {
+  it('by default should be brand red colour', function() {
           
     for(i = 0; i < elementListLength; i++){
 

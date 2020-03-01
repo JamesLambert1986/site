@@ -104,6 +104,7 @@ gulp.task('audit-visual-regression-move-timestamp-folder-images', function(done)
 
   var html_report = fs.readFileSync('backstop_data/html_report/config.js', 'utf8')
   var html_report_fixed = html_report.replace(/\/bitmaps_test\/.*\//g, "/bitmaps_test/");
+  var html_report_fixed = html_report_fixed.replace(/\\\\bitmaps_test\\\\.*\\\\/g, "\\\\bitmaps_test\\\\");
 
   fs.writeFile('backstop_data/html_report/config.js', html_report_fixed, (err) => {  if (err) throw err; done(); });
 
