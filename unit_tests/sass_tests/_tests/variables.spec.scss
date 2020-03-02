@@ -1,6 +1,7 @@
 $test_colors: ();
 $test_colors: map-merge((
   "primary": #E10A0A,
+  "secondary": #28A745
 ), $test_colors);
 
 

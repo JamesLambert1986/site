@@ -1,9 +1,7 @@
 ---
 title: CSS Stats
 ---
-===
-
-<div><a href="/audit" data-icon="/public/svg/ui.svg#back" class="btn btn-link">Back to audit</a></div>
+=== mt-5
 
 # {{ page.title }}
 

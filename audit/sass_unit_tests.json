@@ -2,14 +2,14 @@
   "$": {
     "name": "Mocha Tests",
     "time": "0.0000",
-    "tests": "1",
+    "tests": "3",
     "failures": "0"
   },
   "testsuite": [
     {
       "$": {
         "name": "Root Suite",
-        "timestamp": "2020-03-01T22:01:21",
+        "timestamp": "2020-03-02T16:45:16",
         "tests": "0",
         "time": "0.0000",
         "failures": "0"
@@ -18,9 +18,9 @@
     {
       "$": {
         "name": "var [Mixin]",
-        "timestamp": "2020-03-01T22:01:21",
+        "timestamp": "2020-03-02T16:45:16",
         "tests": "1",
-        "file": "C:\\GitHub\\site\\unit_tests\\sass.js",
+        "file": "/Users/temp/Documents/GitHub/site/unit_tests/sass.js",
         "time": "0.0000",
         "failures": "0"
       },
@@ -30,6 +30,32 @@
             "name": "var [Mixin] Var mixin returns the colour heading as a CSS variable",
             "time": "0.0000",
             "classname": "Var mixin returns the colour heading as a CSS variable"
+          }
+        }
+      ]
+    },
+    {
+      "$": {
+        "name": "Colour variables are added to the global var array [Variable]",
+        "timestamp": "2020-03-02T16:45:16",
+        "tests": "2",
+        "file": "/Users/temp/Documents/GitHub/site/unit_tests/sass.js",
+        "time": "0.0000",
+        "failures": "0"
+      },
+      "testcase": [
+        {
+          "$": {
+            "name": "Colour variables are added to the global var array [Variable] primary colour variable is added to the global var array with the correct hex code",
+            "time": "0.0000",
+            "classname": "primary colour variable is added to the global var array with the correct hex code"
+          }
+        },
+        {
+          "$": {
+            "name": "Colour variables are added to the global var array [Variable] secondary colour variable is added to the global var array with the correct hex code",
+            "time": "0.0000",
+            "classname": "secondary colour variable is added to the global var array with the correct hex code"
           }
         }
       ]

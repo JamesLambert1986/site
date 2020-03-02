@@ -207,9 +207,12 @@ console.log('\nVirgin Money Design System v' + releaseVersion)
 // start the app
 utils.findAvailablePort(app, function (port) {
   console.log('Listening on port ' + port + '   url: http://localhost:' + port)
+
+
   if (env === 'production' || useBrowserSync === 'false') {
     app.listen(port)
   } else {
+
     app.listen(port - 50, function () {
       browserSync({
         proxy: 'localhost:' + (port - 50),

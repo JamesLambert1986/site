@@ -29,7 +29,36 @@ $color5: rgba(170, 171, 188, 1);
   display: flex;
   align-items: center;
 
-  
+  color: black!important;
+
+  * {
+
+    color: black!important;
+  }
+
+  .display-1 {
+
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+
+  .btn {
+
+    font-size: 2rem;
+    background: transparent;
+    border: 2px solid currentColor;
+
+    &:active {
+      background: black!important;
+      border: 2px solid black!important;
+      color: white!important;
+    }
+  }
 
   &.first {
     z-index: 5;
@@ -38,4 +67,10 @@ $color5: rgba(170, 171, 188, 1);
   &:target {
     z-index: 10;
   }
+
+  &:nth-child(even) {
+
+    background: $color2;
+  }
 }
+

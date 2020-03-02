@@ -5,7 +5,7 @@ title: What is Regression testing
 <div class="slide first">
 ===
 
-# {{page.title}}
+<h1 class="display-1">{{page.title}}</h1>
 
 - A series of non-functional re-tests
 - Run after bug fixing or code changes
@@ -19,7 +19,7 @@ title: What is Regression testing
 
 <div class="slide" id="relate">
 ===
-<h2>How does it relate to CSS</h2>
+<h2 class="display-1">How does it relate to CSS</h2>
 
 - The cascade and specificity can easily cause side effects
 - Updates can conflict with pre-existing rules
@@ -33,7 +33,7 @@ title: What is Regression testing
 
 <div class="slide" id="automated">
 ===
-<h2>Automated over manaual</h2>
+<h2 class="display-1">Automated over manaual</h2>
 
 - Time consuming and prone to user error
 - Can be run over night if large
@@ -47,7 +47,7 @@ title: What is Regression testing
 
 <div class="slide" id="types">
 ===
-<h2>Types of testing</h2>
+<h2 class="display-1">Types of testing</h2>
 
 - Pull requests
 - CSS regression tests
@@ -64,7 +64,7 @@ title: What is Regression testing
 <div class="slide" id="pull">
 ===
 
-## Pull requests
+<h2 class="display-1">Pull requests</h2>
 
 - A second set of eyes
 - Background knowledge of the project
@@ -80,7 +80,7 @@ title: What is Regression testing
 <div class="slide" id="css">
 ===
 
-## CSS regression
+<h2 class="display-1">CSS regression</h2>
 
 - Test the computed styles of elements
 - Test against requirements not everything
@@ -97,7 +97,7 @@ title: What is Regression testing
 <div class="slide" id="sass">
 ===
 
-## Sass regression
+<h2 class="display-1">Sass regression</h2>
 
 - More like unit tests with inputs and outputs
 - Test variables, extends, functions and mixins
@@ -113,7 +113,7 @@ title: What is Regression testing
 <div class="slide" id="visual">
 ===
 
-## Visual regression
+<h2 class="display-1">Visual regression</h2>
 
 - Compare a series of components with reference images
 - Setup a kitchen sink of components to test
@@ -130,7 +130,7 @@ title: What is Regression testing
 <div class="slide" id="auditing">
 ===
 
-## Auditing
+<h2 class="display-1">Auditing</h2>
 
 - Generate stats
 - Monitor the file size
@@ -147,7 +147,7 @@ title: What is Regression testing
 <div class="slide" id="why">
 ===
 
-## Why bother
+<h2 class="display-1">Why bother</h2>
 
 - Is it overkill
 - Prevent bugs before getting into test
@@ -162,7 +162,7 @@ title: What is Regression testing
 <div class="slide" id="questions">
 ===
 
-## Any questions?
+<h2 class="display-1">Any questions?</h2>
 
 ===
 </div>

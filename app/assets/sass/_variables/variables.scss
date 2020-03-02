@@ -1,8 +1,10 @@
 $primary: #E10A0A;
+$secondary: #28A745;
 
 $vars: ();
 $vars: map-merge((
-  "--colour-primary":   $primary
+  "--colour-primary":   $primary,
+  "--colour-secondary":   $secondary
 ), $vars);
 
 :root {

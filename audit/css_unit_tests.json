@@ -1,14 +1,14 @@
 {
   "$": {
-    "name": "HeadlessChrome 80.0.3987 (Windows 10.0.0)",
+    "name": "HeadlessChrome 80.0.3987 (Mac OS X 10.15.3)",
     "package": "",
-    "timestamp": "2020-03-01T22:01:23",
+    "timestamp": "2020-03-02T16:45:17",
     "id": "0",
-    "hostname": "DESKTOP-DN2SUOJ",
-    "tests": "1",
+    "hostname": "Lambert.local",
+    "tests": "2",
     "errors": "0",
     "failures": "0",
-    "time": "0.027"
+    "time": "0.029"
   },
   "properties": [
     {
@@ -16,7 +16,7 @@
         {
           "$": {
             "name": "browser.fullName",
-            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/80.0.3987.122 Safari/537.36"
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/80.0.3987.122 Safari/537.36"
           }
         }
       ]
@@ -26,8 +26,15 @@
     {
       "$": {
         "name": "h1 by default should be brand red colour",
-        "time": "0.027",
+        "time": "0.019",
         "classname": "h1"
+      }
+    },
+    {
+      "$": {
+        "name": "Card title should have double the amount of spacing bottom on desktop",
+        "time": "0.01",
+        "classname": "Card title"
       }
     }
   ],

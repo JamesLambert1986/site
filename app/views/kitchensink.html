@@ -5,16 +5,13 @@
     {% import "_components/meta.html" as meta with context %}
     {{ meta.write() }}
 
-    <link href="/public/stylesheets/styles-mobile.css?{{site.version}}" media="only screen and (max-width: 36em)" rel="stylesheet" />
-    <link href="/public/stylesheets/styles.css?{{site.version}}" media="only screen and (min-width: 36em)" rel="stylesheet" />
+    <link href="/public/stylesheets/styles.css" media="screen" rel="stylesheet" />
     <script>
       if (!window.CSS || !window.CSS.supports || !window.CSS.supports('(--foo: red)')) {
           var head = document.querySelector('head');
           head.innerHTML += '<link href="/public/stylesheets/styles-compatible.css?{{site.version}}" rel="stylesheet">';
       }
     </script>
-    <link href="/public/stylesheets/lint.css?{{site.version}}" media="screen" rel="stylesheet" />
-
 
     <link href="/public/stylesheets/kitchensink.css" media="screen" rel="stylesheet" />
 <style>
