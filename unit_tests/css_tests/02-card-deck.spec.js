@@ -25,5 +25,4 @@ describe('Card title', function() {
       assert.equal(rawStyle,'24px', "margin bottom should be 1.5rem");
     }
   });
-
 });
