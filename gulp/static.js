@@ -44,13 +44,13 @@ gulp.task('static', function(done) {
 
   // Used to make sure dir are created
   function mkDirByPathSync(targetDir, { isRelativeToScript = false } = {}) {
-    const sep = path.sep;
+    const sep = '/';
     const initDir = path.isAbsolute(targetDir) ? sep : '';
     const baseDir = isRelativeToScript ? __dirname : '.';
 
     return targetDir.split(sep).reduce((parentDir, childDir) => {
       const curDir = path.resolve(baseDir, parentDir, childDir);
-      console.log(curDir);
+
       try {
         fs.mkdirSync(curDir);
       } catch (err) {
@@ -72,54 +72,11 @@ gulp.task('static', function(done) {
       return curDir;
     }, initDir);
   }
-/*
-  // Generate SVG html
-  // Static html wont be able to read external SVG files so we need to embed our icons into all of the pages
-  //var SVGfilelist = walkSync('./public/svg');
-  var svghtml = "";
 
-  // Rebrand only have a few SVG files
-  var SVGfilelist = [ 
-    //'./public/svg/brand.svg',
-    //'./public/svg/core.svg',
-    //'./public/svg/general.svg',
-    //'./public/svg/living.svg',
-    './public/svg/logo.svg',
-    //'./public/svg/lounges.svg',
-   // './public/svg/pattern-repeat-white.svg',
-    //'./public/svg/pattern-repeat.svg',
-    './public/svg/pattern.svg',
-    './public/svg/rebrand-ui.svg',
-    './public/svg/social.svg',
-    //'./public/svg/savings.svg',
-    //'./public/svg/ui.svg',
-    //'./public/svg/vmg.svg' 
-  ]
-
-  SVGfilelist.forEach(function(svgfile) {
-
-
-    let temphtml = fs.readFileSync(svgfile, 'utf8')
-
-    if(svgfile == "./public/svg/ui.svg"){
-
-      temphtml = temphtml.replace(/id="/g,'id="ui-');
-      temphtml = temphtml.replace(/xlink:href="#/g,'xlink:href="#ui-');
-    }
-    else if(svgfile == "./public/svg/brand.svg"){
-
-      temphtml = temphtml.replace(/id="/g,'id="brand-');
-      temphtml = temphtml.replace(/xlink:href="#/g,'xlink:href="#brand-');
-    }
-
-    svghtml += temphtml;
-  });
-*/
   var writeFile = function(filename,data,oldstyle=false){
 
       // Ceate file and make sure dir exists
-      var actualFilename = filename.replace('/prototype/old/','/prototype/')
-      var doc = fs.readFileSync(actualFilename, 'utf8')
+      var doc = fs.readFileSync(filename, 'utf8')
 
       var writeFolder = './docs/';
 
@@ -131,11 +88,12 @@ gulp.task('static', function(done) {
         newdir = filename.replace('./app/views/',writeFolder).replace('index.md','').replace('index.html','')
       }
 
+      console.log(newdir);
       mkDirByPathSync(newdir);
 
 
       // Override global vars depending upon file location, i.e. VMG has different vars
-      var filepath = actualFilename.replace('./app/views/','')
+      var filepath = filename.replace('./app/views/','')
       
       let locals = new Array;
 
