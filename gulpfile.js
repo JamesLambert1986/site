@@ -57,6 +57,7 @@ gulp.task('build',
 
   gulp.series(
     'public',
+    'clean-build',
     'move-assets',
     'static'
   )
