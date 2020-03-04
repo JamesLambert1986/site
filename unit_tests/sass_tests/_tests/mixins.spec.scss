@@ -14,3 +14,113 @@
   }
 }
 /*#endregion*/
+
+
+/*#region prefix*/
+@include describe('prefix [Mixin]') {
+  @include it('prefix mixin duplicates the rule with the assigned prefixes') {
+    // Assert the expected results
+    @include assert {
+      @include output {
+        @include prefix(transform,scale(2));
+      }
+      @include expect {
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+        transform: scale(2);
+      }
+    }
+    @include assert {
+      @include output {
+        @include prefix(transform,scale(2),webkit);
+      }
+      @include expect {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+      }
+    }
+  }
+}
+/*#endregion*/
+
+
+/*#region pattern-dimensions*/
+@include describe('pattern-dimensions [Mixin]') {
+  @include it('pattern-dimensions returns the correct dimensions including at the different breakpoints') {
+    // Assert the expected results
+    @include assert {
+      @include output {
+
+        @include pattern-dimensions();
+      }
+      @include expect {
+        
+        height: 10rem;
+        width: 50rem;
+        stroke-width: 32px;
+        
+        @media (min-width: 36em) {
+
+          height: 15rem;
+          width: 75rem;
+        }
+        
+        @media (min-width: 62em) {
+
+          height: 20rem;
+          width: 100rem;
+        }
+      }
+    }
+    @include assert {
+      @include output {
+
+        @include pattern-dimensions(0.33);
+      }
+      @include expect {
+        
+        height: 3.3rem;
+        width: 16.5rem;
+        stroke-width: 24px;
+        
+        @media (min-width: 36em) {
+
+          height: 4.95rem;
+          width: 24.75rem;
+        }
+        
+        @media (min-width: 62em) {
+
+          height: 6.6rem;
+          width: 33rem;
+        }
+      }
+    }
+    @include assert {
+      @include output {
+
+        @include pattern-dimensions(2);
+      }
+      @include expect {
+        
+        height: 20rem;
+        width: 100rem;
+        stroke-width: 28px;
+        
+        @media (min-width: 36em) {
+
+          height: 30rem;
+          width: 150rem;
+        }
+        
+        @media (min-width: 62em) {
+
+          height: 40rem;
+          width: 200rem;
+        }
+      }
+    }
+  }
+}
+/*#endregion */
